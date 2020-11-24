@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Please run the following commands
 
-Things you may want to cover:
+* bundle
 
-* Ruby version
+* rails db:create
 
-* System dependencies
+* rails db:migrate
 
-* Configuration
+* rails db:seed
 
-* Database creation
+Please run the test using this command
 
-* Database initialization
+* rspec
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Please find the api collection in the root folder of the project.
