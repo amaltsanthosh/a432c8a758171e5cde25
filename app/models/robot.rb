@@ -3,6 +3,7 @@
 # Robot class
 class Robot < ApplicationRecord
   attr_accessor :is_placed, :to_report
+
   validate :validate_position
 
   DIRECTIONS = %w[EAST SOUTH WEST NORTH].freeze
@@ -24,7 +25,7 @@ class Robot < ApplicationRecord
   end
 
   def place_robot(command)
-    placing_coordinates = command.split(/[\s\,]/)[1..3]
+    placing_coordinates = command.split(/[\s,]/)[1..3]
     self.is_placed = true
     update_attributes(x_position: placing_coordinates.first.to_i,
                       y_position: placing_coordinates.second.to_i,
